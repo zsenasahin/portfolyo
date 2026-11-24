@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zeynep Sena Şahin · Yazılım Mühendisi</title>
+    <meta
+      name="description"
+      content="Zeynep Sena Şahin — React, .NET ve MSSQL ile kurumsal ölçekte full-stack uygulamalar geliştiren yazılım mühendisi."
+    />
+    <meta property="og:title" content="Zeynep Sena Şahin · Yazılım Mühendisi" />
+    <meta
+      property="og:description"
+      content="Full-stack yazılım mühendisi · React, .NET, React Native, MSSQL"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#f4ede3" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#111726" media="(prefers-color-scheme: dark)" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      // Sayfa yüklenmeden temayı ve dili uygula (renk sıçramasını önler)
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          document.documentElement.dataset.theme = t;
+          var l = localStorage.getItem('lang');
+          if (l) document.documentElement.lang = l;
+        } catch (e) {
+          document.documentElement.dataset.theme = 'light';
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
