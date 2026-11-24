@@ -243,7 +243,6 @@ export const projects: Project[] = [
     ],
     stat: { value: '81', label: { tr: 'il', en: 'provinces' } },
     tags: ['React Native', 'Expo', 'Supabase', 'PostgreSQL', 'OpenStreetMap'],
-    live: 'https://akilli-gezi-rehberi.vercel.app',
     repos: [{ label: 'GitHub', url: gh('Akilli-gezi-rehberi') }],
   },
   {
